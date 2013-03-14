@@ -46,11 +46,12 @@ amdify({
   dir = isDir ? argv.o : path.dirname(argv.o);
 
 
-  var transformer = new transformers.Collection([new transformers.AmdConfig({ output: dir + "/request.config.js" }), new transformers.Template("amd")]), 
+  var transformer = new transformers.Template("amd"), 
   stat;
 
 
   if(isDir) {
+    transformer = new transformers.Collection([new transformers.AmdConfig({ output: dir + "/request.config.js" }), transformer]);
     transformer = new transformers.Copy({ output: argv.o }, transformer);
   } else {
     transformer = new transformers.Concat({ output: argv.o }, transformer);

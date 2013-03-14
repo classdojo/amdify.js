@@ -1,45 +1,12 @@
-Amdify converts your node.js code into browser-compatible code. For example
 
-```javascript
-var events = require("events"),
-EventEmitter = require("events").EventEmitter;
 
-var em = new EventEmitter();
-em.emit("hello", "world!");
+Amdify converts your commonJS code (node.js) into browser-compatible code. Just point amdify to a node.js entry point:
+
+```bash
+
+# combine in a single file
+amdify -i ./application/entry.js -o ./amd/output.js
+
+# wrap the files, and copy them to their own directory
+amdify -i ./application/entry.js -o ./amd
 ```
-
-Would be converted to:
-
-```javascript
-define(["events"], function() {
-  var events = require("events"),
-  EventEmitter = require("events").EventEmitter;
-
-  var em = new EventEmitter();
-  em.emit("hello", "world!");
-});
-```
-
-
-You can also include files:
-
-
-```javascript
-var amdify = require("amdify"),
-template   = amdify.require("template.mu");
-console.log(template); //<h1>hello world!</h1>
-
-```
-
-Would be converted to:
-
-```javascript
-define(["amdify", "template.mu"], function() {
-  
-  var amdify = require("amdify"),
-  template   = amdify.require("template.mu");
-  console.log(template); //<h1>hello world!</h1>
-});
-```
-
-
