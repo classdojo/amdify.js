@@ -1,0 +1,31 @@
+{
+  "name": "amdify",
+  "version": "0.0.1",
+  "description": "Amdify converts your node.js code into browser-compatible code. For example",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/classdojo/amdify.js.git"
+  },
+  "author": "",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "13fbcf0008418c8bc56cfbde5445438b482834bd",
+  "dependencies": {
+    "outcome": "0.0.x",
+    "flatten": "0.0.x",
+    "async": "0.2.x",
+    "stepc": "0.0.x",
+    "underscore": "1.4.x",
+    "crc32": "0.2.x",
+    "resolve": "0.3.x",
+    "structr": "0.2.x",
+    "asyngleton": "0.0.x"
+  },
+  "bin": {
+    "amdify": "./bin/amdify"
+  }
+}
