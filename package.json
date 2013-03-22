@@ -1,6 +1,6 @@
 {
   "name": "amdify",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Amdify converts your node.js code into browser-compatible code. For example",
   "main": "./lib/index.js",
   "scripts": {
