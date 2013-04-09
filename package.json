@@ -1,6 +1,6 @@
 {
   "name": "amdify",
-  "version": "0.0.9",
+  "version": "0.0.12",
   "description": "Amdify converts your node.js code into browser-compatible code. For example",
   "main": "./lib/index.js",
   "scripts": {
@@ -25,7 +25,8 @@
     "structr": "0.2.x",
     "asyngleton": "0.0.x",
     "ejs": "0.8.x",
-    "mkdirp": "0.3.x"
+    "mkdirp": "0.3.x",
+    "toarray": "0.0.x"
   },
   "bin": {
     "amdify": "./bin/amdify"
