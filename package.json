@@ -15,6 +15,7 @@
   "readmeFilename": "README.md",
   "gitHead": "13fbcf0008418c8bc56cfbde5445438b482834bd",
   "dependencies": {
+    "optimist": "0.6.1",
     "outcome": "0.0.x",
     "flatten": "0.0.x",
     "async": "0.2.x",
